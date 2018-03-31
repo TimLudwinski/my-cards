@@ -4,3 +4,5 @@ My cards lets you quiz yourself on anything you choose.  You can create quiz dec
 
  - To install this project type `npm install`.  
  - To start this project type `npm start`.  
+
+This project has been tested on iOS on a iPhone SE device.  
