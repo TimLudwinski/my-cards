@@ -69,6 +69,10 @@ export default class CardQuiz extends React.Component {
     });
   }
   
+  backToDecks() {
+    this.props.navigation.goBack();
+  }
+  
   render() {
     return (
       <View>
@@ -103,6 +107,9 @@ export default class CardQuiz extends React.Component {
           <Text style={{fontSize: 36, textAlign: 'center'}}>You Finished the Quiz!!</Text>
           <TouchableOpacity onPress={() => this.restartQuiz()} style={{height: 40, backgroundColor: 'yellow', justifyContent: 'space-between'}}>
             <Text style={{textAlign: 'center', color: 'black', fontSize: 24}}>Do quiz again?</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => this.backToDecks()} style={{height: 40, backgroundColor: 'white', justifyContent: 'space-between'}}>
+            <Text style={{textAlign: 'center', color: 'black', fontSize: 24}}>Go Back to Deck?</Text>
           </TouchableOpacity>
         </View> 
       }
